@@ -13,4 +13,4 @@ For icons, we have used “ font awesome” library.
 
 Software -
 VScode with live server
-For opening the websiteDownload the HealthWeb folder and then open index.html
+For opening the website - Download the HealthWeb folder and then open index.html
