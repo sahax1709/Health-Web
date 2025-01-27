@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Health Web</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg">
+
+</head>
+
+<body>
+
+
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container ">
+
+
+            <a class="navbar-brand logo-image" href="index.html" style="color:#198754; font-size:1.6rem;"><i
+                    class="fas fa-heartbeat" style="color:#198754; font-size: 25px;padding:10px;"></i>Health Web</a>
+
+
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">BMI Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Nutrition Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">BMR Calculator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn-outline-sm contactlink" href="#contact">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <header id="header" class="header">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h1 class="h1-large ">BMI Calculator <i class="fas fa-weight"
+                                style="color:#198754; font-size: 75px;padding:10px;"></i></h1>
+                        <p class="p-large">Calculate your BMI (body mass index) by using the form below. Enter your
+                            weight and height and click the Calculate button to display your BMI result.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7 bmileft">
+
+                    <form action="none" method="post" name="bmiform" style="margin-top:90px;">
+                        <fieldset class="fieldsett">
+                            <legend class="bmiheading">Height and Weight</legend>
+                            <div style="align-items: center;">
+                                <label for="pounds" class="labell ">Weight (kg):</label>
+                                <input type="text" name="pounds" id="pounds" class="inputt">
+                                <br>
+
+                                <label for="inches" class="labell ">Height (cm):</label>
+                                <input type="text" name="inches" id="inches" class="inputt">
+                            </div>
+                            <br>
+
+                            <button type="button" class=" btn btn-outline-success btn-lg buttonn" name="calculate"
+                                value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+                        </fieldset>
+                        <fieldset class="fieldsett">
+                            <label for="bmi" class="labell " id="bmi_label" style="width:200px;">
+                                <p style="font-weight: 900;">Your calculated BMI is: </p>
+                            </label>
+                            <input type="text" name="bmi" id="bmi" readonly="readonly" class="inputt"
+                                style="border: 3px; font-size:35px;">
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+            <div style="margin-top:100px;">
+                <img class="img-fluid" src="images/bmi.jpg" alt="alternative">
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <div class="counter-container">
+                        <div class="counter-cell">
+                            <div data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="3"
+                                class="purecounter">1</div>
+                            <div class="counter-info">percent adults obese.</div>
+                        </div>
+                        <div class="counter-cell">
+                            <div data-purecounter-start="0" data-purecounter-end="39" data-purecounter-duration="2"
+                                class="purecounter">1</div>
+                            <div class="counter-info">million children under the age of 5 were overweight or obese in
+                                2020.</div>
+                        </div>
+                        <div class="counter-cell">
+                            <div data-purecounter-start="0" data-purecounter-end="340" data-purecounter-duration="1"
+                                class="purecounter">1</div>
+                            <div class="counter-info">million children and adolescents aged 5-19 were overweight or
+                                obese in 2016.</div>
+                        </div>
+                        <div class="counter-cell">
+                            <div data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="3"
+                                class="purecounter">1</div>
+                            <div class="counter-info">percent of the world’s population has health problems.</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="basic-3 bg-gray" id="projects">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="text-container">
+                        <h1>Macronutrients</h1>
+                        <br>
+                        <ul style="font-size:20px;">
+                            <li class=""><span class="foodhead">Protein</span>(4 calories per gram.)-> Proteins carry
+                                out a variety of functions like ensuring the growth and development of muscles, bones,
+                                hair, and skin, and
+                                forming antibodies, hormones, and other essential substances.
+                                <br></li>
+                            <li class=""><span class="foodhead">Carbohydrates</span>(4 calories per gram)->
+                                Carbs fuel your body, especially your central nervous system and brain, and protect
+                                against disease.<br></li>
+                            <li class=""><span class="foodhead">Fat</span>(9 calories per gram.)-> Fat supports many of
+                                your body’s functions such as vitamin and mineral absorption, blood clotting, building
+                                cells, and muscle movement.</li>
+                        </ul>
+
+                        <p style="font-size:20px;"> <span class="foodhead">Foods High in Protein- </span>
+                            beef, chicken, turkey, cheese, milk, whey protein, eggs, beans, peanuts, fish, shellfish
+                            <br>
+                            <span class="foodhead">Foods High in Fats- </span>
+                            egg yolks, salmon, cheese, cream, whole milk, yogurt, mayonnaise, nuts, olives, chia seeds
+                            <br>
+                            <span class="foodhead">Foods High in Carbs- </span>
+                            beans, lentils, oats, wheat, bananas, mangoes, quinoa, potatoes, breads, pastas, baked goods
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5" style="margin-top:10rem;">
+                    <div class="image-container ">
+                        <img class="img-fluid" src="images/details-2.png" alt="alternative">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="details" class="basic-2">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-1.png" alt="alternative">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7">
+                    <div class="text-container">
+                        <div class='app'>
+                            <div class='containerr'>
+                                <h1 class='titlee'>Nutrition Calculator</h1>
+                                <p class='instructions'>Enter the grams of each macro below</p>
+                                <div class='inputs'>
+                                    <div class='inputBlock text-green'>
+                                        <label for='fat' class="nulabel">FAT</label>
+                                        <input type='number' id='fat' class='nutritionInput nuinput'></input>
+                                    </div>
+                                    <div class='inputBlock text-yellow'>
+                                        <label for='protein' class="nulabel">PROTEIN</label>
+                                        <input type='number' id='protein' class='nutritionInput nuinput'></input>
+                                    </div>
+                                    <div class='inputBlock text-red'>
+                                        <label for='carbs' class="nulabel">TOTAL CARBS</label>
+                                        <input type='number' id='carbs' class='nutritionInput nuinput'></input>
+                                    </div>
+                                </div>
+                                <div class='results'>
+                                    <h1 style="margin-top:60px; margin-bottom: 20px;">Breakdown</h1>
+                                    <div class='stats'>
+                                        <div class='statBlock'>
+                                            <h3 class="text-green h33">FAT</h3>
+                                            <span id='fatOutput' class="spann">0</span>%
+                                        </div>
+                                        <div class='statBlock'>
+                                            <h3 class="text-yellow h33">PROTEIN</h3>
+                                            <span id='proteinOutput' class="spann">0</span>%
+                                        </div>
+                                        <div class='statBlock'>
+                                            <h3 class="text-red h33">CARBS</h3>
+                                            <span id='carbsOutput' class="spann">0</span>%
+                                        </div>
+                                        <div class='statBlock'>
+                                            <h3 class="h33" style="color:#5e5e5e">TOTAL CAL</h3>
+                                            <span id='calorieOutput' class="spann">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services" class="cards-1 bg-gray">
+        <div class="container">
+            <div class="text-container">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="card card-body text-left mt-5">
+                            <h1 class="heading display-5 pb-3 bmrheading" style="text-align:center">BMR Calculator</h1>
+                            <hr>
+                            <div id="welcome-text">
+                                <p class="lead" style="align-content: left;">
+                                    Information on Activity Level:<br>
+                                    <b>Sedentary: </b>Little or no exercise
+                                    <br>
+                                    <b>Lightly Active: </b>Light exercise or sports 1-3 days/week
+                                    <br>
+                                    <b>Moderatetely Active: </b>Moderate exercise or sports 3-5
+                                    days/week
+                                    <br>
+                                    <b>Very Active: </b>Hard exercise or sports 6-7 days a week
+                                    <br>
+                                    <b>Extra Active: </b>Very hard exercise or sports & physical job or
+                                    2x a day training.
+                                </p>
+                                <hr>
+                            </div>
+                            <div class="card card-body text-center mt-5" style="width:100%;">
+                                <form id="UI-form">
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Age</span>
+                                            <input type="number" class="form-control" id="age"
+                                                placeholder="Enter age..." min="1" max="99" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Weight (kgs)</span>
+                                            <input type="number" class="form-control" id="weight"
+                                                placeholder="Enter weight..." min="30" max="300" step="0.1" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Height (cm)</span>
+                                            <input type="number" class="form-control" id="height"
+                                                placeholder="Enter height..." min="50" max="220" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Gender</span>
+                                            <select type="option" class="form-control" id="gender">
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Activity</span>
+                                            <select type="option" class="form-control" id="activity">
+                                                <option value="Sedentary">Sedentary</option>
+                                                <option value="Lightly Active">Lightly Active</option>
+                                                <option value="Moderately Active">Moderately Active
+                                                </option>
+                                                <option value="Very Active">Very Active</option>
+                                                <option value="Extra Active">Extra Active</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Calculate your BMR"
+                                            class="btn btn-lg btn-outline-success btn-block ">
+                                    </div>
+                                </form>
+
+
+                                <div id="results" style="display:none;">
+                                    <h2>Results</h2>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Basal Metabolic Rate
+                                                (Calories/Day)</span>
+                                            <input type="number" class="form-control" id="BMR" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-text">Total Daily Energy
+                                                Expenditure (TDEE)</span>
+                                            <input type="number" class="form-control" id="TDEE" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-1">
+        <img class="quotes-decoration" src="images/quotes.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-1.jpg" alt="alternative">
+                                    <p class="testimonial-text">“The doctor of the future will give no medicine, but
+                                        will instruct his patients in care of the human frame, in diet, and in the
+                                        cause and prevention of disease.” </p>
+                                    <div class="testimonial-author">Thomas Edison</div>
+                                </div>
+
+
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-2.jpg" alt="alternative">
+                                    <p class="testimonial-text">
+                                        “The cheerful mind perseveres, and the strong mind hews its way through a
+                                        thousand difficulties.”</p>
+                                    <div class="testimonial-author">Swami Vivekananda</div>
+                                </div>
+
+
+
+                                <div class="swiper-slide">
+                                    <img class="testimonial-image" src="images/testimonial-3.jpg" alt="alternative">
+                                    <p class="testimonial-text">“To keep the body in good health is a duty…otherwise
+                                        we shall not be able to keep the mind strong and clear.”</p>
+                                    <div class="testimonial-author">Buddha</div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="contact" class="form-1 bg-gray">
+        <img class="decoration-star" src="images/decoration-star.svg" alt="alternative">
+        <img class="decoration-star-2" src="images/decoration-star.svg" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container" style="margin-top:15%;">
+                        <img class="img-fluid" src="images/contact.jpg" alt="alternative">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Contact Us</h2>
+
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © <a href="#header">Health Web</a></p>
+                    <p class="p-small">Made by Abhinav Lodha and Yavisht Gupta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/purecounter.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
